@@ -1,0 +1,43 @@
+@import "../../../common/variables";
+@import "../../../common/mixin";
+
+.reservation_btn {
+  display: grid;
+  gap: 30px;
+  @include pc {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn {
+    color: $color-black;
+    font: normal 700 16px/150% $font-family-notoSanJp;
+    max-width: 300px;
+    @include sp {
+      max-width: 100%;
+    }
+
+    &-confirm {
+      background-color: #b6d7a8;
+    }
+
+    &-table-output {
+      background-color: #d9ead3;
+    }
+
+    &-card-output {
+      background-color: #00ffff;
+    }
+
+    &-cancle {
+      background-color: #ff9900;
+    }
+
+    &-message {
+      background-color: #c9daf8;
+    }
+  }
+}

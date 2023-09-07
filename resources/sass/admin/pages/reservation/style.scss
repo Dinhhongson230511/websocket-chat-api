@@ -1,0 +1,93 @@
+@import "../../../common/variables";
+
+.margin-auto {
+  margin: auto 0;
+}
+
+#specialFood {
+  display: none;
+}
+
+.special_food {
+  border-radius: 8px;
+  padding: 0 10px;
+  border: 1px solid #dee2e6;
+  background: #ffffff;
+  .special_food--left {
+    text-align: center;
+  }
+  .special_food--right {
+    margin-top: 10px;
+  }
+  #mainFoodImage {
+    max-width: 160px;
+    height: auto;
+  }
+  .value {
+    color: $color-theme-secondary ;
+  }
+}
+
+.special_food--desc {
+  margin-top: 10px;
+  min-height: 43px;
+  max-height: 155px;
+  overflow: auto;
+  .value {
+    color: $color-theme-secondary;
+  }
+}
+
+.special_food--price_link {
+  margin-top: 10px;
+  max-height: 155px;
+}
+
+.payment-fee {
+  display: none;
+  border-top: 2px solid green;
+  //padding: 10px;
+  .payment--title {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  .payment {
+    margin-left: 30px;
+    margin-top: 15px;
+    .payment__item--row {
+      margin-left: 30px;
+      margin-top: 15px;
+      .payment__item--row_calculate {
+        margin-left: 30px;
+        margin-top: 15px;
+      }
+    }
+  }
+  .payment--calculate {
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+}
+
+.confirm-buttons {
+  display: none;
+  text-align: center;
+  .btn-save {
+    display: inline-block;
+  }
+  .btn-back {
+    background-color: $color-orange-500 !important;
+  }
+}
+
+#dgMeal {
+  display: none;
+}
+
+.padding-left-50 {
+  padding-left: 50px;
+}
+
+.btn-save .save {
+  background-color: #48bb78;
+}
